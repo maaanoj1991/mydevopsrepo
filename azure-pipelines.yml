@@ -29,9 +29,3 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'myweb'
     publishLocation: 'Container'
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: 'Azure subscription 1(acec26d2-87a4-4734-8126-1f868b2a4b45)'
-    appType: 'webAppLinux'
-    appName: 'mkpgyan'
-    package: '$(System.DefaultWorkingDirectory)/**/*.war'
